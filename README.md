@@ -1,285 +1,70 @@
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
+# Diabetic Retinopathy Classification
 
-Modify this file to match your project and remove sections that don't apply.
+📌 **Project Overview**
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+This project focuses on classifying Diabetic Retinopathy (DR) using the UCI Diabetic Retinopathy Debrecen dataset. The dataset consists of features extracted from retinal images, capturing key indicators of diabetic retinopathy. Each instance contains 19 numerical attributes, with the final attribute serving as the target variable:
 
-After you're finished please remove all the comments and instructions!
--->
+0 → No diabetic retinopathy (Non-DR case)
 
-<div align="center">
+1 → Presence of diabetic retinopathy (DR case)
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+📂 **Dataset**
 
-  <h3><b>Microverse README Template</b></h3>
+Source: UCI Machine Learning Repository
 
-</div>
+Size: 19 numerical features + 1 class label
 
-<!-- TABLE OF CONTENTS -->
+Task: Binary classification (Non-DR vs. DR)
 
-# 📗 Table of Contents
+🛠️ **Machine Learning Models Used**
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+We implemented and compared three classification algorithms:
 
-<!-- PROJECT DESCRIPTION -->
+**Logistic Regression**
 
-# 📖 [your_project_name] <a name="about-project"></a>
+**XGBoost Classifier**
 
-> Describe your project in 1 or 2 sentences.
+**Random Forest Classifier**
 
-**[your_project__name]** is a...
+Each model was evaluated using key performance metrics such as accuracy, precision, recall, and F1-score to assess its effectiveness in detecting diabetic retinopathy.
 
-## 🛠 Built With <a name="built-with"></a>
+⚙️ **Installation & Dependencies**
 
-### Tech Stack <a name="tech-stack"></a>
+To run the project, ensure you have the following dependencies installed:
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+pip install pandas numpy scikit-learn xgboost matplotlib seaborn
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+**Usage**
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
+Clone the repository and navigate to the project directory:
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+git clone https://github.com/yourusername/diabetic-retinopathy-classification.git
+cd diabetic-retinopathy-classification
 
-<!-- Features -->
+🔥 ** Future Improvements**
 
-### Key Features <a name="key-features"></a>
+Experiment with hyperparameter tuning for better model optimization.
 
-> Describe between 1-3 key features of the application.
+Apply feature engineering to improve classification accuracy.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+👨‍💻 **Author**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Desta Legesse Wubishet
 
-<!-- LIVE DEMO -->
+Email: dlwubi@gmail.com
 
-## 🚀 Live Demo <a name="live-demo"></a>
+GitHub: dlwub
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+📜 **License**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is licensed under the MIT License.
 
-<!-- GETTING STARTED -->
+🙏 **Acknowledgments**
 
-## 💻 Getting Started <a name="getting-started"></a>
+UCI Machine Learning Repository for providing the dataset.
 
-> Describe how a new developer could make use of your project.
+Open-source contributors for developing ML libraries.
 
-To get a local copy up and running, follow these steps.
+Feel free to contribute, suggest improvements, or report issues! 🚀
 
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
